@@ -14,24 +14,24 @@ db.createCollection("bugs")
 db.bugs.insertMany([
 {
 	title: "Bug in admin page",
-  reportedBy: "Ashwin Harish",
+  	reportedBy: "Ashwin Harish",
 	status: "open",
-  priority: "high",
-  createdAt: new Date("2025-05-21")
+  	priority: "high",
+  	createdAt: new Date("2025-05-21")
 },
 {
 	title: "Rate Limiting Bug",
 	reportedBy: "Aravind",
 	status: "in process",
-  priority: "medium",
-  createdAt: new Date("2025-04-02")
+  	priority: "medium",
+  	createdAt: new Date("2025-04-02")
 },
 {
 	title: "Home page reloading",
 	reportedBy: "Akhilesh",
-  status: "open",
-  priority: "low",
-  createdAt: new Date("2025-01-01")
+  	status: "open",
+  	priority: "low",
+  	createdAt: new Date("2025-01-01")
 }
 ])
 /* Output
@@ -77,10 +77,10 @@ db.bugs.updateOne(
 db.bugs.insertOne(
 {
 	title: "Bug in Stories Section",
-  reportedBy: "Test User",
+  	reportedBy: "Test User",
 	status: "open",
-  priority: "low",
-  createdAt: new Date("2025-05-13")
+  	priority: "low",
+  	createdAt: new Date("2025-05-13")
 })
 /* Output
 {
