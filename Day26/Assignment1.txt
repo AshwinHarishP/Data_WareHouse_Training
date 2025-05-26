@@ -382,7 +382,7 @@ db.students.deleteOne({name: "John Doe"})
 db.students.find({department: "Computer Science"})
 
 
-Query Operators
+-- Query Operations
 
 -- 5. Find students where age is greater than 20 
 db.students.find({age: {$gt:20}})
