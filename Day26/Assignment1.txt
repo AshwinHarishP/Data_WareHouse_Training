@@ -416,6 +416,9 @@ db.students.find({
   }
 })
 
+
+-- Aggregation Framework
+
 -- 10. Group by department and count students.
 db.students.aggregate([
   {
