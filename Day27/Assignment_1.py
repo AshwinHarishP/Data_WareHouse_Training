@@ -258,8 +258,11 @@ while True:
     elif choice == "2":
         print("\nWithdraw")
         withdraw_amount = float(input("Enter the amount to be withdraw: "))
-        amount -= withdraw_amount
-        print(f"Amount: {withdraw_amount} withdraw successful")
+        if withdraw_amount <= amount:
+            amount -= withdraw_amount
+            print(f"Amount: {withdraw_amount} withdrawn successfully")
+        else:
+            print("Insufficient balance")
 
     elif choice == "3":
         print("\nCheck Balance")
