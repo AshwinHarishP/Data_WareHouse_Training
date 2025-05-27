@@ -10,8 +10,9 @@ print(squares)
 2. Second Largest Number: Find the second largest number in a list without using sort() 
 """
 numbers = [20, 40, 10, 3, 4, 100, 678, 0, 1, 50]
-numbers.sort()
-print(numbers[-2])
+first_largest = max(numbers)
+second_largest = max(i for i in numbers if i != first_largest)
+print(second_largest)
 
 """
 3. Remove Duplicates: Write a program to remove all duplicate values from a list while preserving order.
