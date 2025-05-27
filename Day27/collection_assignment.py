@@ -35,7 +35,7 @@ element = [1, 2, 3, 4, 5]
 k = 2
 k = k % len(element)
 
-element[:] = element[k+1:] + element[:k+1]
+element = element[-k:] + element[:-k]
 print(element)
 
 """
@@ -46,7 +46,7 @@ even_numbers_doubled = []
 
 for i in numbers:
     if i % 2 == 0:
-        even_numbers_doubled.append(i * i)
+        even_numbers_doubled.append(i * 2)
 print(even_numbers_doubled)
 
 # Tuples
