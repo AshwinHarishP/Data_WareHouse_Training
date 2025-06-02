@@ -1,0 +1,17 @@
+use EmployeeAttendance
+
+db.task_feedback.insertMany([
+  { employee_name: "Ashwin", task_id: 1, feedback: "Finished task on time.", notes: "Client seemed happy with the work.", rating: 5, timestamp: new Date("2025-06-01T09:30:00Z") },
+  { employee_name: "Aravind", task_id: 2, feedback: "Documentation could be better.", notes: "Need to add more details next time.", rating: 3, timestamp: new Date("2025-06-01T10:00:00Z") },
+  { employee_name: "Akhilesh", task_id: 3, feedback: "Worked well with the team.", notes: "Helped others when stuck.", rating: 5, timestamp: new Date("2025-06-01T11:00:00Z") },
+  { employee_name: "Rohit", task_id: 4, feedback: "Need to improve", notes: "Had some issues outside control.", rating: 2, timestamp: new Date("2025-06-02T09:15:00Z") },
+  { employee_name: "Sneha", task_id: 5, feedback: "Learned many new things", notes: "Suggested some new tools.", rating: 4, timestamp: new Date("2025-06-02T10:45:00Z") },
+  { employee_name: "Priya", task_id: 6, feedback: "Testing was weak.", notes: "Tests missed some cases.", rating: 3, timestamp: new Date("2025-06-02T14:30:00Z") },
+  { employee_name: "Rahul", task_id: 7, feedback: "Task done properly.", notes: "Followed instructions well.", rating: 5, timestamp: new Date("2025-06-03T09:00:00Z") },
+  { employee_name: "Anjali", task_id: 8, feedback: "Didnt understand", notes: "diffiulties faced in advance queries", rating: 1, timestamp: new Date("2025-06-03T12:00:00Z") },
+  { employee_name: "Vikram", task_id: 9, feedback: "Could communicate better.", notes: "Was quiet in meetings.", rating: 3, timestamp: new Date("2025-06-03T15:45:00Z") },
+  { employee_name: "Nisha", task_id: 10, feedback: "Did everything asked.", notes: "Handled UI updates well.", rating: 5, timestamp: new Date("2025-06-04T11:30:00Z") },
+]);
+
+db.task_feedback.createIndex({ employee_name: 1 });
+db.task_feedback.createIndex({ task_id: 1 });

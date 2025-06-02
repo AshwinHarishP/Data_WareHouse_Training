@@ -1,0 +1,24 @@
+employee_id,task_description,task_date
+1,Prepare project report,2025-06-01
+1,Finalize presentation slides,2025-06-01
+1,Send status update email,2025-06-02
+2,Conduct interviews,2025-06-01
+2,Schedule candidate meetings,2025-06-02
+3,Review financial statements,2025-06-01
+3,Analyze budget trends,2025-06-02
+3,Prepare forecast report,2025-06-02
+4,Develop feature X,2025-06-01
+4,Fix bugs in module Y,2025-06-02
+5,Organize team meeting,2025-06-01
+5,Update project plan,2025-06-02
+6,Update documentation,2025-06-01
+6,Create user guides,2025-06-02
+6,Review documentation,2025-06-02
+7,Plan training session,2025-06-01
+7,Conduct training,2025-06-02
+8,Audit accounts,2025-06-01
+8,Prepare audit report,2025-06-02
+9,Deploy new release,2025-06-01
+9,Test new features,2025-06-02
+10,Coordinate client calls,2025-06-01
+10,Design UI mockups,2025-06-02
