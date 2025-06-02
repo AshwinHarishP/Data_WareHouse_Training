@@ -1,0 +1,21 @@
+product_id,product_name,price
+1,Laptop,750.00
+2,Phone,400.00
+3,Tablet,300.00
+4,Monitor,200.00
+5,Keyboard,50.00
+6,Mouse,30.00
+7,Printer,120.00
+8,Scanner,150.00
+9,Headphones,80.00
+10,Webcam,90.00
+11,Smartwatch,250.00
+12,Router,70.00
+13,SSD 1TB,150.00
+14,HDD 2TB,100.00
+15,Graphics Card,300.00
+16,RAM 16GB,90.00
+17,Power Bank,40.00
+18,VR Headset,500.00
+19,Game Controller,60.00
+20,Microphone,110.00
