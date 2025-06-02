@@ -1,0 +1,91 @@
+-- Creating Database for RetailSales
+use RetailSales;
+
+-- Inserting 10 records
+db.campaign_feedback.insertMany([
+  {
+    campaign_id: 101,
+    product_id: 1,
+    store_id: 1,
+    feedback: "Huge Crowd and sales held",
+    rating: 5.0,
+    date: ISODate("2025-06-01")
+  },
+  {
+    campaign_id: 102,
+    product_id: 2,
+    store_id: 2,
+    feedback: "response are very low",
+    rating: 2.0,
+    date: ISODate("2025-06-01")
+  },
+  {
+    campaign_id: 103,
+    product_id: 3,
+    store_id: 1,
+    feedback: "Excellent sales spike",
+    rating: 4.8,
+    date: ISODate("2025-06-02")
+  },
+  {
+    campaign_id: 104,
+    product_id: 4,
+    store_id: 3,
+    feedback: "Customers confused about the offer",
+    rating: 2.9,
+    date: ISODate("2025-06-02")
+  },
+  {
+    campaign_id: 105,
+    product_id: 5,
+    store_id: 2,
+    feedback: "Decent interest but low conversion",
+    rating: 3.5,
+    date: ISODate("2025-06-03")
+  },
+  {
+    campaign_id: 106,
+    product_id: 1,
+    store_id: 3,
+    feedback: "Repeat customers appreciated loyalty bonus",
+    rating: 4.2,
+    date: ISODate("2025-06-03")
+  },
+  {
+    campaign_id: 107,
+    product_id: 2,
+    store_id: 1,
+    feedback: "Average interest, placement was not visible",
+    rating: 3.0,
+    date: ISODate("2025-06-04")
+  },
+  {
+    campaign_id: 108,
+    product_id: 3,
+    store_id: 2,
+    feedback: "Positive buzz on social media",
+    rating: 4.7,
+    date: ISODate("2025-06-04")
+  },
+  {
+    campaign_id: 109,
+    product_id: 4,
+    store_id: 3,
+    feedback: "Limited engagement, weekend timing helped slightly",
+    rating: 3.8,
+    date: ISODate("2025-06-05")
+  },
+  {
+    campaign_id: 110,
+    product_id: 5,
+    store_id: 1,
+    feedback: "Strong footfall during campaign, high sales",
+    rating: 4.6,
+    date: ISODate("2025-06-05")
+  }
+]);
+
+-- Creating indexes for product and store
+db.campaign_feedback.createIndex({ product_id: 1 });
+db.campaign_feedback.createIndex({ store_id: 1 });
+
